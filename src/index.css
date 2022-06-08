@@ -84,6 +84,10 @@ a {
 }
 
 a:hover {
+    color: var(--color-white);
+}
+
+.btn {
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
