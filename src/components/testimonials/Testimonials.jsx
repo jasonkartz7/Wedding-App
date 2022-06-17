@@ -12,10 +12,11 @@ const Testimonials = () => {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
-      <div className="container testimonials_contianer">
+      <div className="container testimonials_container">
         <article className="testimonial">
           <div className="client_avatar">
             <img src={AVTR1} alt="Avatar One" />
+          </div>
             <h5 className="client_name">Ernest Achiever</h5>
             <small className="client_review">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -23,11 +24,11 @@ const Testimonials = () => {
               nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
               Duis aute irure dolor in reprehenderit in voluptate!
             </small>
-          </div>
         </article>
         <article className="testimonial">
           <div className="client_avatar">
             <img src={AVTR1} alt="Avatar One" />
+          </div>
             <h5 className="client_name">Ernest Achiever</h5>
             <small className="client_review">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -35,11 +36,11 @@ const Testimonials = () => {
               nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
               Duis aute irure dolor in reprehenderit in voluptate!
             </small>
-          </div>
         </article>
         <article className="testimonial">
           <div className="client_avatar">
             <img src={AVTR1} alt="Avatar One" />
+          </div>
             <h5 className="client_name">Ernest Achiever</h5>
             <small className="client_review">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
@@ -47,7 +48,6 @@ const Testimonials = () => {
               nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
               Duis aute irure dolor in reprehenderit in voluptate!
             </small>
-          </div>
         </article>
       </div>
     </section>
