@@ -5,6 +5,29 @@ import AVTR2 from '../../assets/avatar2.jpg'
 import AVTR3 from '../../assets/avatar3.jpg'
 import AVTR4 from '../../assets/avatar4.jpg'
 
+const data = [
+  {
+    avatar: AVTR1,
+    name: 'Tina Snow',
+    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    avatar: AVTR2,
+    name: 'Shatta Wale',
+    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    avatar: AVTR3,
+    name: 'Kwame Despite',
+    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    avatar: AVTR4,
+    name: 'Nana Ama',
+    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  }
+]
+
 
 const Testimonials = () => {
   return (
@@ -13,42 +36,21 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
 
       <div className="container testimonials_container">
-        <article className="testimonial">
-          <div className="client_avatar">
-            <img src={AVTR1} alt="Avatar One" />
-          </div>
-            <h5 className="client_name">Ernest Achiever</h5>
-            <small className="client_review">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate!
-            </small>
-        </article>
-        <article className="testimonial">
-          <div className="client_avatar">
-            <img src={AVTR1} alt="Avatar One" />
-          </div>
-            <h5 className="client_name">Ernest Achiever</h5>
-            <small className="client_review">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate!
-            </small>
-        </article>
-        <article className="testimonial">
-          <div className="client_avatar">
-            <img src={AVTR1} alt="Avatar One" />
-          </div>
-            <h5 className="client_name">Ernest Achiever</h5>
-            <small className="client_review">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate!
-            </small>
-        </article>
+        {
+          data.map(({ avatar, name, review }, index) => {
+            return (
+              <article key={index} className="testimonial">
+              <div className="client_avatar">
+                <img src={avatar} />
+              </div>
+                <h5 className="client_name">{name}</h5>
+                <small className="client_review">
+                  {review}
+                </small>
+            </article>
+            )
+          })
+        }
       </div>
     </section>
   )
